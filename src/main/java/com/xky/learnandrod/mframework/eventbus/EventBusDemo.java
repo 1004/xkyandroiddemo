@@ -9,5 +9,4 @@ public class EventBusDemo {
     public void testRegist(){
         EventBus.getDefault().register(this);
     }
-
 }
