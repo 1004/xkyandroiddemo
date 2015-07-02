@@ -27,6 +27,7 @@ public class ThrowableFailureEvent implements HasExecutionScope {
     public ThrowableFailureEvent(Throwable throwable) {
         this.throwable = throwable;
         suppressErrorUi = false;
+
     }
 
     /**
