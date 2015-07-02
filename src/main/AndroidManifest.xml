@@ -30,6 +30,10 @@
             android:name=".view.JavaGrammarActivity"
              >
         </activity>
+        <activity
+            android:name=".view.AritActivity"
+             >
+        </activity>
     </application>
 
 </manifest>
