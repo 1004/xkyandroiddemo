@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_android_learn_binder_">学习-BINDER</string>
+    <dimen name="dimen_android_learn_btn_h">50dp</dimen>
+</resources>
