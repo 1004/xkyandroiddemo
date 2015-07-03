@@ -14,14 +14,13 @@ public class InsertOrder extends ABaseOrder{
         for (int i = 0 ; source != null && i<source.length ; i++){
               int key = source[i];//先拿到排序牌
 
+                int k = i;
               //和手里的牌比较
-              for (int j = i-1 ; j>0 ; j--){
+              for (int j = i-1 ; j>=0 ; j--){
                   //如果手里的牌大于拿到的牌 继续
                 if (source[j] > key){
-                    int temp = source[j];
-                    source[j] = key;
-                    source[i] = source[j];
-                    continue;
+                  source[k] = source[j];
+                  k = j;
                 }
 
                   //仍然是最大牌 顺序不变
@@ -30,6 +29,8 @@ public class InsertOrder extends ABaseOrder{
                 }
 
               }
+            source[k] = key;
+
         }
 
 
