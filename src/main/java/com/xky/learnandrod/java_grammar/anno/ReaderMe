@@ -1,0 +1,10 @@
+注解
+元注解
+@Target :定义使用位置 方法【method】，属性【field】，类【type】...
+@Retention：属性，源代码【source】，类文件【class】，运行时【runtime】 编译檫除
+@Documente :包含到文档中
+@Inherited：允许子类继承父类中的注解
+
+注解可以看做是一个类的变形
+常常用来进行类或者方法属性进行值的标记
+然后再需要出取出该标记进行使用
