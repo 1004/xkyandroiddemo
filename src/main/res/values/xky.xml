@@ -2,4 +2,42 @@
 <resources>
     <string name="string_android_learn_binder_">学习-BINDER</string>
     <dimen name="dimen_android_learn_btn_h">50dp</dimen>
+
+    <!--导航-->
+    <color name="text_selected">#888</color>
+    <!--Welcome sliding page  -->
+    <dimen name="welcome_images_size">360.0dip</dimen>
+    <dimen name="welcome_images_margin_top">0.0dip</dimen>
+    <dimen name="welcome_heading_margin_bottom">12.0dip</dimen>
+    <dimen name="welcome_text_margin">48.0dip</dimen>
+    <dimen name="welcome_heading">24.0sp</dimen>
+    <dimen name="welcome_text_margin_bottom">12.0dip</dimen>
+    <dimen name="welcome_content_min_height">96.0dip</dimen>
+    <dimen name="welcome_content">16.0sp</dimen>
+    <string name="button_product_tour">product tour</string>
+
+    <string name="welcom_head_01">Spreadsheets on the go</string>
+    <string name="welcom_content_01">Get stuff done with or without an internet connection.</string>
+    <string name="welcom_head_02">Share and edit together</string>
+    <string name="welcom_content_02">Write on your own or invite more people to contribute.</string>
+    <string name="welcom_head_03">Automatically save to the web</string>
+    <string name="welcom_content_03">Never lose your progress, so you can keep working from any computer or device.</string>
+    <string name="welcom_head_04">Edit Excel spreadsheets</string>
+    <string name="welcom_content_04">Open, edit, and save Excel files - all within Sheets.</string>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="WelcomeHeadingAppearance" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/welcome_heading</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="WelcomeContentAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/welcome_content</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!--guide   end-->
 </resources>

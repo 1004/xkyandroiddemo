@@ -12,6 +12,7 @@ import com.xky.learnandrod.view.DesignTypeActivity;
 import com.xky.learnandrod.view.JavaGrammarActivity;
 import com.xky.learnandrod.view.LeanrBinderActivity;
 import com.xky.learnandrod.view.adapter.MainAdapter;
+import com.xky.learnandrod.view.guide.guideActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,8 +53,9 @@ public class MainActivity extends BaseActivity {
         mDatas = new ArrayList<Mainitem>();
         mDatas.add(getMainItem("设计代码", DesignTypeActivity.class));
         mDatas.add(getMainItem("java 语法细节", JavaGrammarActivity.class));
-        mDatas.add(getMainItem("Binder_LEARN",LeanrBinderActivity.class));
         mDatas.add(getMainItem("常用算法",AritActivity.class));
+        mDatas.add(getMainItem("Binder_LEARN",LeanrBinderActivity.class));
+        mDatas.add(getMainItem("启动导航页",guideActivity.class));
         MainAdapter mAdapter = new MainAdapter(this);
         mAdapter.setData(mDatas);
         mListView.setAdapter(mAdapter);
