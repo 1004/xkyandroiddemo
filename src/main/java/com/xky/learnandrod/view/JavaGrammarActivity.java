@@ -10,6 +10,7 @@ import com.xky.learnandrod.R;
 import com.xky.learnandrod.domains.DesignItem;
 import com.xky.learnandrod.java_.Client;
 import com.xky.learnandrod.java_grammar.anno.impl.AnnotationClient;
+import com.xky.learnandrod.java_grammar.thread_task.impl.WorkClient;
 import com.xky.learnandrod.java_grammar.thread_threadLocal.ThreadLocalClient;
 import com.xky.learnandrod.java_grammar.thread_tools.ToolsClient;
 import com.xky.learnandrod.view.adapter.DesignAdapter;
@@ -50,6 +51,7 @@ public class JavaGrammarActivity extends BaseActivity{
         mDatas.add(getDesignItem("并发-ThreadLocal",new ThreadLocalClient()));
         mDatas.add(getDesignItem("并发-ThreadTool【Exectors,CyClicBarrier,Semaphor,CountDownLathc】",new ToolsClient()));
         mDatas.add(getDesignItem("注解",new AnnotationClient()));
+        mDatas.add(getDesignItem("工作Task",new WorkClient()));
 
         mAdapters = new DesignAdapter(this);
         mAdapters.setData(mDatas);
